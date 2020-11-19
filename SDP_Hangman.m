@@ -9,15 +9,15 @@ fprintf('************************************************\n')
 
 %% 
 fprintf('Welcome to Hangman!\n')
-fprintf(' _______');
-fprintf('|       |');
-fprintf('|');
-fprintf('|');
-fprintf('|');
-fprintf('----');
+fprintf(' _______\n');
+fprintf('|       |\n');
+fprintf('|\n');
+fprintf('|\n');
+fprintf('|\n');
+fprintf('----\n');
 fprintf('You will have 6 tries to correctly guess the word!\n');
 fprintf('As a hint this word falls under the category of animals. Good Luck!');
-word_bank={'cat', 'dog', 'horse', 'zebra', 'donkey' ,'monkey', 'rabbit' ,'squirrel', 'goat'};
+word_bank=["cat", "dog", "horse", "zebra", "donkey" ,"monkey", "rabbit" ,"squirrel", "goat"];
 word = randsample(word_bank, 1);
 arrayOfDashes = outputDashes(word)
 numOfGuesses = 0;	
