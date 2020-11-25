@@ -86,7 +86,7 @@ while (numOfGuesses < 6)
            fprintf('----');
         
     end
-    %numOfGuesses = numOfGuesses + 1;
+    numOfGuesses = numOfGuesses + 1;
  end
 
 
