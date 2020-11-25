@@ -16,16 +16,11 @@ fprintf('|\n');
 fprintf('|\n');
 fprintf('----\n');
 fprintf('You will have 6 tries to correctly guess the word!\n');
-fprintf('As a hint this word falls under the category of animals. Good Luck!\n\n');
+fprintf('As a hint this word falls under the category of animals. Good Luck!');
 word_bank=["cat", "dog", "horse", "zebra", "donkey" ,"monkey", "rabbit" ,"squirrel", "goat"];
 word = randsample(word_bank, 1);
 arrayOfDashes = outputDashes(word);
-%for i = 1:length(word)
-    
-%    fprintf('%s \n\n', arrayOfDashes(i));
-%end
-
-fprintf('Your word is %s \n\n', arrayOfDashes)
+fprintf(arrayOfDashes)
 numOfGuesses = 0;	
 while (numOfGuesses < 6)
 	x = input('Please enter your guess: ', 's');
@@ -86,7 +81,7 @@ while (numOfGuesses < 6)
            fprintf('----');
         
     end
-    %numOfGuesses = numOfGuesses + 1;
+    numOfGuesses = numOfGuesses + 1;
  end
 
 
